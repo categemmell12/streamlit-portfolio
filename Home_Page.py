@@ -1,32 +1,31 @@
 import streamlit as st
 
-# Page Title
-st.title("Cate Gemmell")
+# Title of App
+st.title("Web Development Lab03 and Lab04")
 
-# Course Information
-st.header("CS 1301 - Web Development Lab 01")
+# Assignment Data 
+# TODO: Fill out class and name
 
-# Welcome Message
-st.write("""
-Welcome to my Streamlit web application!
+st.header("CS 1301")
+st.subheader("Web Development")
+st.subheader("Cate Gemmell")
 
-This website contains multiple pages that showcase my portfolio and an interactive quiz. Use the navigation menu on the left to explore each page.
-""")
 
-# Page Descriptions
-st.subheader("Website Pages")
 
 st.write("""
-**Home Page:** Provides an overview of the website and explains the purpose of each page.
-
-**Portfolio:** Highlights my education, leadership experiences, work experience, skills, and future career goals.
-
-**Which Workout Style Fits You? Quiz:** Answer a series of questions to discover which workout style best matches your personality, fitness goals, and preferences.
-""")
-
-# Optional Divider
+Welcome to our Streamlit Web Development Lab03 Poetry app! You can navigate between the pages using the sidebar to the left. The following pages are:""")
 st.divider()
 
-# Optional Closing Message
-st.write("Thank you for visiting my website!")
+st.page_link("pages/1_Poetry_Search.py", label = "Poetry Search", icon = "📚") 
+st.write("Search for poems by author or by title! Data has been pulled from the Poetry Database API (https://poetrydb.org/).")
+st.divider()
+st.page_link("pages/2_Chatbot.py", label = "Poetry Chatbot", icon = "🗣️") 
+st.write("Ask any question about poetry, poets, the history of poetry, and more!")
+st.divider()
+st.page_link("pages/3_Poetry_AI_Generator.py", label = "Poetry AI Generator", icon = "✏️") 
+st.write("Generate a new poem inspired by real authors using AI and PoetryDB data.")
+st.divider()
+st.page_link("pages/4_Poetry_Whiz.py", label = "Poetry Whiz", icon = "💡") 
+st.write("Ask questions about poems and authors using AI with live API data.")
+
 

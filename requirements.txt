@@ -1,2 +1,8 @@
 streamlit
+google-genai
 requests
+altair
+pandas
+numpy
+wordcloud
+matplotlib
